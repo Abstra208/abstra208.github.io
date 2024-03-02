@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
+:root{
+    --main-color: #790600;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +40,11 @@ body{
     align-items: center;
 }
 #socials_options div{
-    padding-top: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+
 }
 #socials_options img{
     max-width: 60px;
@@ -47,15 +55,15 @@ body{
     right: 0;
     height: 100px;
     width: 100px;
-    background-color: rgb(255, 148, 48);
+    background-color: var(--main-color);
     border-radius: 15px;
     margin: 1.5vh;
 }
 #avatar_img{
     display: flex;
     justify-content: center;
-    padding-top: 10px;
 }
 #avatar img{
-    max-width: 80px;
+    max-width: 100px;
+    border-radius: 15px;
 }
