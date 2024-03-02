@@ -1,14 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     position: absolute;
     left: 0%;
     top: 0%;
     width: 100vw;
     height: 100vh;
-    outline: green 1px solid;
 }
 #main_text{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-family: "Madimi One", sans-serif;
+}
+#socials{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 97vh;
+    width: 100px;
+    background-color: rgb(255, 148, 48);
+    border-radius: 15px;
+    margin: 1.5vh;
+}
+#socials_options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#socials_options div{
+    padding-top: 20px;
+}
+#socials_options img{
+    max-width: 60px;
+}
+#avatar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 148, 48);
+    border-radius: 15px;
+    margin: 1.5vh;
+}
+#avatar_img{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+#avatar img{
+    max-width: 80px;
 }
