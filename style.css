@@ -2,6 +2,7 @@
 
 :root{
     --main-color: #790600;
+    --secondary-color: rgb(255, 148, 48);
 }
 
 *{
@@ -12,8 +13,8 @@ body{
     position: absolute;
     left: 0%;
     top: 0%;
-    width: 100vw;
-    height: 100vh;
+    width: 100svw;
+    height: 100svh;
 }
 #main_text{
     position: absolute;
@@ -29,7 +30,7 @@ body{
     left: 0;
     height: 97vh;
     width: 100px;
-    background-color: rgb(255, 148, 48);
+    background-color: var(--secondary-color);
     border-radius: 15px;
     margin: 1.5vh;
 }
@@ -67,9 +68,15 @@ body{
 }
 
 @media screen and (max-width: 600px) {
+    #main_text{
+        font-size: 10vh;
+    }
+
     #socials{
-        height: 100px;
+        height: 10vh;
         width: 97vw;
+        margin: 1.5vw;
+        border-radius: 10px;
     }
     #socials_options{
         display: flex;
@@ -78,17 +85,30 @@ body{
         align-items: center;
     }
     #socials_options div{
-        margin-top: 8px;
-        margin-left: 10px;
-        padding: 10px;
+        margin-top: 5px;
+        padding: 6px;
         background-color: white;
-        border-radius: 15px;
+        border-radius: 10px;
+    }
+    #socials_options img{
+        max-width: 6vh;
+    }
+    #github, #Ko-fi, #Reddit{
+        margin-left: 5px;
+    }
+    #mail{
+        margin-left: 36vw;
     }
 
     #avatar{
         position: fixed;
         bottom: 0;
         right: 0;
+        height: 10vh;
+        width: 10vh;
+    }
+    #avatar img{
+        max-width: 10vh;
     }
 }
 
@@ -97,5 +117,12 @@ body{
         position: fixed;
         top: 0;
         right: 0;
+    }
+
+    #github, #Ko-fi, #Reddit{
+        margin-top: 5px;
+    }
+    #mail{
+        margin-top: 36vh;
     }
 }
