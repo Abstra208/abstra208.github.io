@@ -44,14 +44,12 @@ body{
     padding: 10px;
     background-color: white;
     border-radius: 15px;
-
 }
 #socials_options img{
     max-width: 60px;
 }
 #avatar{
     position: fixed;
-    top: 0;
     right: 0;
     height: 100px;
     width: 100px;
@@ -66,4 +64,38 @@ body{
 #avatar img{
     max-width: 100px;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #socials{
+        height: 100px;
+        width: 97vw;
+    }
+    #socials_options{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+    #socials_options div{
+        margin-top: 8px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    #avatar{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #avatar{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
 }
